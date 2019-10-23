@@ -3,6 +3,7 @@ public class TestsInterview {
     public static void main(String[] args) {
         System.out.println(checkNewspaperWords("abc, de! fg.", "de? fg!"));
         findFactor(2, 100);
+        findValueInArray(new int[]{6,8,3,7,5,6,1,4},5);
     }
 
 
@@ -42,6 +43,24 @@ public class TestsInterview {
                 }
             }
         }
+    }
+
+    //3 Find a value in unsorted array
+    public static int findValueInArray(int [] array, int value){
+        boolean found = false;
+        //use for-each style to search array for val.
+        for(int x:array){
+            if(x==value){
+                found=true;
+                System.out.println("value index is " + array[x]);
+                break;
+            }
+
+        }
+        if(found){
+            System.out.println("Value is found");
+        }
+        return value;
     }
 
 }
