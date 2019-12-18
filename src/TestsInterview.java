@@ -20,6 +20,8 @@ public class TestsInterview {
         } else {
             System.out.println(" is not a palindrome");
         }
+        //Task 4b
+        verifyPalindrome2("madam");
 
     }
 
@@ -122,5 +124,16 @@ public class TestsInterview {
             }
         }
         return true;
+    }
+
+    static void verifyPalindrome2(String A) {
+        System.out.println("4a Check if a String is palindrome with charAt and conditional statement");
+        //  Scanner sc=new Scanner(System.in);// String A=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
+        int count = 0;
+        for (int i = 0; i < A.length() / 2; i++) {
+            if (A.charAt(i) == A.charAt(A.length() - 1 - i)) count++;
+        }
+        System.out.println((count == A.length() / 2) ? "Yes" : "No");
     }
 }
