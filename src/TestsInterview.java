@@ -14,6 +14,13 @@ public class TestsInterview {
         } else {
             System.out.println(" is not a palindrome");
         }
+        //Task 4a
+        if (verifyPalindrome1(isPalindrome)) {
+            System.out.println(" is a palindrome");
+        } else {
+            System.out.println(" is not a palindrome");
+        }
+
     }
 
 //	1. There is a scoundrel who stole a dog from a neighbor.
@@ -22,7 +29,7 @@ public class TestsInterview {
 //	and returns true if all the words from the note are in the text of the newspaper or false if there are not enough words
 // cover case when words in note more than in newspaper
 
-    public static boolean checkNewspaperWords(String newspp, String note) {
+    static boolean checkNewspaperWords(String newspp, String note) {
         System.out.println("1. checkNewspaperWords");
         boolean result = false;
         int count = 0;
@@ -44,7 +51,7 @@ public class TestsInterview {
     }
 
     // 2. Find the factors of numbers from n to k
-    public static void findFactor(int n, int k) {
+    static void findFactor(int n, int k) {
         System.out.println("2. Find the factors of numbers from n to k");
         for (int i = n; i <= k; i++) {
             System.out.println("Factors of n " + i + ":");
@@ -57,7 +64,7 @@ public class TestsInterview {
     }
 
     //3 Find a value in unsorted array
-    public static int findValueInArray(int[] array, int value) {
+    static int findValueInArray(int[] array, int value) {
         System.out.println("3 Find a value in unsorted array");
         boolean found = false;
         //use for-each style to search array for val.
@@ -76,7 +83,7 @@ public class TestsInterview {
     }
 
     //4 Check whether the given string is Palindrome. Examples: madam, racecar, rotor, rotator, Level, anna, civic
-    public static boolean verifyPalindrome(String s) {
+    static boolean verifyPalindrome(String s) {
         System.out.println("4. Check if a String is a palindrome");
         char[] array = s.toCharArray();
         boolean isPalindrome = false;
@@ -96,5 +103,24 @@ public class TestsInterview {
             }
         }
         return isPalindrome;
+    }
+
+    //4a Check whether the given string is Palindrome (with while and charAt)
+    static boolean verifyPalindrome1(String input) {
+        System.out.println("4a Check if a String is palindrome with a while loop");
+        System.out.print(input);
+
+        String inputLowerCase = input.replaceAll("\\s+", "").toLowerCase();
+        int length = inputLowerCase.length();
+        int forward = 0;
+        int backward = length - 1;
+        while (backward > forward) {
+            char forwardChar = inputLowerCase.charAt(forward++);
+            char backwardChar = inputLowerCase.charAt(backward--);
+            if (forwardChar != backwardChar) {
+                return false;
+            }
+        }
+        return true;
     }
 }
