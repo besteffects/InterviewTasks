@@ -22,6 +22,8 @@ public class TestsInterview {
         }
         //Task 4b
         verifyPalindrome2("madam");
+        //Task 5
+        findNumberOfSumPairs(new int[]{5, 5, 2, 8, 9, 1}, 10);
 
     }
 
@@ -76,7 +78,6 @@ public class TestsInterview {
                 System.out.println("value index is " + array[x]);
                 break;
             }
-
         }
         if (found) {
             System.out.println("Value is found");
@@ -127,7 +128,7 @@ public class TestsInterview {
     }
 
     static void verifyPalindrome2(String A) {
-        System.out.println("4a Check if a String is palindrome with charAt and conditional statement");
+        System.out.println("4b Check if a String is palindrome with charAt and conditional statement");
         //  Scanner sc=new Scanner(System.in);// String A=sc.next();
         /* Enter your code here. Print output to STDOUT. */
         int count = 0;
@@ -135,5 +136,22 @@ public class TestsInterview {
             if (A.charAt(i) == A.charAt(A.length() - 1 - i)) count++;
         }
         System.out.println((count == A.length() / 2) ? "Yes" : "No");
+    }
+
+    /* 5 Find pairs of elements from an array which sum to a specified value. -> Given
+     * an array of integers, and a number ‘sum’, find the number of pairs of
+     * integers in the array whose sum is equal to ‘sum’. */
+    public static int findNumberOfSumPairs(int[] array, int sum) {
+        System.out.println("5. Find number of pairs of elements that are equal to the specified sum");
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] + array[j] == sum) {
+                    count++;
+                }
+            }
+        }
+        System.out.println("The count of sum is: " + count);
+        return count;
     }
 }
