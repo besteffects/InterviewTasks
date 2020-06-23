@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class TestsInterview {
 
     public static void main(String[] args) {
@@ -24,6 +26,11 @@ public class TestsInterview {
         verifyPalindrome2("madam");
         //Task 5
         findNumberOfSumPairs(new int[]{5, 5, 2, 8, 9, 1}, 10);
+
+        //Task6
+        int [] arr= {-3, 1,2,3,4,5,15,53,0};
+        System.out.println(Arrays.toString(arr));
+        findMaxNumber(arr);
 
     }
 
@@ -153,5 +160,17 @@ public class TestsInterview {
         }
         System.out.println("The count of sum is: " + count);
         return count;
+    }
+
+    //6 Find max number in array
+    private static int findMaxNumber(int arr[]){
+        int maxNum=arr[0];
+        for (int i = 0; i <arr.length; i++) {
+            if(maxNum<arr[i]){
+                maxNum=arr[i];
+            }
+        }
+        System.out.println(maxNum);
+        return maxNum;
     }
 }
