@@ -38,13 +38,15 @@ public class TestsInterview {
 //	He wants to write a ransom note, cutting out words from a newspaper.
 //	The task is to write a function that accepts 2 strings (text of the newspaper, text of the note)
 //	and returns true if all the words from the note are in the text of the newspaper or false if there are not enough words
-// cover case when words in note more than in newspaper
+//  cover case when words in note more than in newspaper
 
     static boolean checkNewspaperWords(String newspp, String note) {
         System.out.println("1. checkNewspaperWords");
         boolean result = false;
         int count = 0;
-        String[] newspWords = newspp.split("\\W+");
+        String[] newspWords = newspp.split("\\W+"); // \W Do a global search for non-word characters in a string, w is for word characters
+        // + The plus sign indicates one or more occurrences of the preceding element. For example, ab+c matches "abc",
+        // "abbc", "abbbc", and so on, but not "ac".
         String[] noteWords = note.split("\\W+");
 
         for (String n : newspWords) {
@@ -54,7 +56,7 @@ public class TestsInterview {
                 }
             }
         }
-
+//case when words in note more than in newspaper
         if (count == noteWords.length)
             result = true;
 
@@ -63,12 +65,12 @@ public class TestsInterview {
 
     // 2. Find the factors of numbers from n to k
     static void findFactor(int n, int k) {
-        System.out.println("2. Find the factors of numbers from n to k");
+        System.out.print("2. Find the factors of numbers from n to k");
         for (int i = n; i <= k; i++) {
             System.out.println("Factors of n " + i + ":");
             for (int j = 2; j < i; j++) {
                 if ((i % j) == 0) {
-                    System.out.println(j + " ");
+                    System.out.print(j + " ");
                 }
             }
         }
