@@ -26,6 +26,12 @@ public class _1_Arrays_Strings {
         String permut1 = "ABCD";
         String permut2 = "ACDB";
         System.out.println("Check is a string a is a permutation of a string b: " +CheckPermutation(permut1,permut2));
+
+        /* 3 Write a method to replace of spaces in a string with '%20. You may assume that the string has sufficient space
+        at the end to hold the additional characters and that you are given true length of the string.
+         */
+        urlify("Mr John Smith", 13);
+
     }
 
     //1
@@ -78,14 +84,65 @@ public class _1_Arrays_Strings {
     static String sort(String s) {
         char[] content = s.toCharArray();
         Arrays.sort(content);
-        return new String(content);
+        return  new String(content);
     }
-
+//b compare lengths of two strings
     static boolean CheckPermutation(String first, String second) {
         if (first.length() != second.length()) {
             return false;
         }
         return sort(first).equals(sort(second));
     }
+
+    //2b
+    static boolean permutation1 (String s, String t){
+        if (s.length()!=t.length()){
+            return false;
+        }
+        int[] letters = new int[128]; //Assumption
+        char [] s_array = s.toCharArray();
+        for (char c :s_array){ //count number of each char in s.
+            letters[c]++;
+        }
+//compare two arrays
+        for (int i = 0; i <t.length() ; i++) {
+            int c= (int)t.charAt(i);
+            letters[c]--;
+            if (letters[c]<0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    static void urlify(String str, int trueLength){
+        char[] strArray= str.toCharArray();
+        //in the first scan we count the number of spaces
+        int spaceCount =0, index,  i=0;
+        for (i = 0; i <trueLength ; i++) {
+            if (strArray[i]==' '){
+                spaceCount++;
+            }
+        }
+        index= trueLength+spaceCount*2;
+        if (trueLength < strArray.length) {
+            strArray[trueLength]='\0'; //End array
+        }
+
+        for (i=trueLength-1;i>=0; i--){
+            if(strArray[i]== ' '){
+                strArray[index-1]='0';
+                strArray[index-2]='2';
+                strArray[index-3]='%';
+                index= index-3;
+            }
+            else {
+                strArray[index-1]= strArray[i];
+                index--;
+            }
+        }
+    }
+
+
 }
 
