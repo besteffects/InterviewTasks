@@ -15,7 +15,10 @@ public class Search {
                 lowIndex = middleIndex;
             } else if (array[middleIndex] > value) {
                 highIndex = middleIndex - 1;
-            } else {
+            } else if(array[middleIndex]==value){
+                highIndex=middleIndex;
+            }
+            else {
                 System.out.println("\nFound a match for " + value + "at Index " + middleIndex);
                 lowIndex = highIndex + 1;
             }

@@ -129,12 +129,12 @@ public class _1_Arrays_Strings {
             }
         }
         //here we compute how many extra characters will be required for the final string
-        index = trueLength + spaceCount * 2;
+        index = trueLength + spaceCount;
         if (trueLength < strArray.length) {
             strArray[trueLength] = '\0'; //End array (cut off everything after the first n characters)
         }
     //here we replace the space with %20
-        for (i = trueLength - 1; i >= 0; i--) {
+        for (i = trueLength - 1; i >= 0 &&index>2; i--) {
             if (strArray[i] == ' ') {
                 strArray[index - 1] = '0';
                 strArray[index - 2] = '2';
