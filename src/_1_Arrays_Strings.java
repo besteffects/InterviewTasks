@@ -38,6 +38,7 @@ public class _1_Arrays_Strings {
          limited to just dictionary words.
          To be a permutation of a palindrome, a string can have no more than one character that is odd. This will cover both the odd and the even cases.*/
         System.out.println("Is this phrase a permutation of palindrome? " + isPermutationOfPalindrome("Tact Coa"));
+        System.out.println("Is this phrase a permutation of palindrome? " + isPermutationOfPalindrome1("Tact Coa"));
     }
 
     //1
@@ -203,6 +204,25 @@ public class _1_Arrays_Strings {
             }
         }
         return table;
+    }
+
+    // Here we check the number of odd counts as we are going along. When we get to the end, we have our answer
+    // Here the code is optimised, but it is slower
+    static boolean isPermutationOfPalindrome1(String phrase) {
+        int countOdd = 0;
+        int[] table = new int[Character.getNumericValue('z') - Character.getNumericValue('a') + 1];
+        for (char c : phrase.toCharArray()) {
+            int x = getCharNumber(c);
+            if (x != -1) {
+                table[x]++;
+                if ((table[x] % 2) == 1) {
+                    countOdd++;
+                } else {
+                    countOdd--;
+                }
+            }
+        }
+        return countOdd <= 1;
     }
 }
 
