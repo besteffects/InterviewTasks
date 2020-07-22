@@ -27,6 +27,7 @@ public class IsPermutation {
     }
 
     //2b Check if the two strings have identical character count
+    //Iterate through the code counting how many times each character appears
     static boolean permutation1(String s, String t) {
         if (s.length() != t.length()) {
             return false;

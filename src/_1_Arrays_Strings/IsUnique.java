@@ -62,7 +62,7 @@ public class IsUnique {
         // return true
         return true;
     }
-    //1b
+    //1b Implementation with hashset (contains only unique values)
     static boolean isUnique2(String name) {
         char[] chars = name.toCharArray();
         Set<Character> set = new HashSet<>();

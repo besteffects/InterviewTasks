@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6605095d-b1c2-440e-a6c8-cfcc9355b30a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/_1_Arrays_Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Arrays_Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_1_Arrays_Strings/ReplaceWithUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_1_Arrays_Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Arrays_Strings/IsPermutationOfPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_1_Arrays_Strings/IsPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Arrays_Strings/IsPermutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_1_Arrays_Strings/IsUnique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Arrays_Strings/IsUnique.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,20 +32,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsPermutationOfPalindrome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="95" selection-start-line="8" selection-start-column="95" selection-end-line="8" selection-end-column="95" />
+            <state relative-caret-position="161">
+              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/ReplaceWithUrl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsPermutation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="645">
+              <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -49,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsUnique.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+            <state relative-caret-position="-819">
+              <caret line="8" column="87" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,8 +109,13 @@
         <option value="$PROJECT_DIR$/src/TestsInterview.java" />
         <option value="$PROJECT_DIR$/src/Arrays.java" />
         <option value="$PROJECT_DIR$/src/Search.java" />
+        <option value="$PROJECT_DIR$/src/_1_Arrays_Strings/IsPermutation.java" />
         <option value="$PROJECT_DIR$/src/_1_Arrays_Strings/IsUnique.java" />
+        <option value="$PROJECT_DIR$/src/_1_Arrays_Strings/ReplaceWithUrl.java" />
         <option value="$PROJECT_DIR$/src/_1_Arrays_Strings.java" />
+        <option value="$PROJECT_DIR$/src/isPermutationOfPalindrome.java" />
+        <option value="$PROJECT_DIR$/src/IsPermutationOfPalindrome.java" />
+        <option value="$PROJECT_DIR$/src/_1_Arrays_Strings/IsPermutationOfPalindrome.java" />
       </list>
     </option>
   </component>
@@ -162,7 +180,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application._1_Arrays_Strings">
+  <component name="RunManager" selected="Application.IsPermutationOfPalindrome">
+    <configuration name="IsPermutationOfPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1_Arrays_Strings.IsPermutationOfPalindrome" />
+      <module name="Interview tasks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Search" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Search" />
       <module name="Interview tasks" />
@@ -191,23 +216,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_1_Arrays_Strings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_Arrays_Strings" />
-      <module name="Interview tasks" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Search" />
       <item itemvalue="Application.SortingAlgorithm" />
       <item itemvalue="Application.Strings" />
       <item itemvalue="Application.TestsInterview" />
-      <item itemvalue="Application._1_Arrays_Strings" />
+      <item itemvalue="Application.IsPermutationOfPalindrome" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application._1_Arrays_Strings" />
+        <item itemvalue="Application.IsPermutationOfPalindrome" />
         <item itemvalue="Application.Search" />
         <item itemvalue="Application.TestsInterview" />
         <item itemvalue="Application.Strings" />
@@ -247,7 +265,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2259887" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2259887" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286517" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.0625" />
@@ -292,25 +310,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsUnique.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        <state relative-caret-position="-819">
+          <caret line="8" column="87" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings.java">
+    <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/ReplaceWithUrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="95" selection-start-line="8" selection-start-column="95" selection-end-line="8" selection-end-column="95" />
+        <state relative-caret-position="60">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsPermutation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="645">
+          <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsPermutationOfPalindrome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
         </state>
       </provider>
     </entry>
