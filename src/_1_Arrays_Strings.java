@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -10,17 +11,21 @@ public class _1_Arrays_Strings {
         String unique1 = "12345";
         String unique2 = "Noot";
         String unique3 = "ASDFGA";
-        System.out.println(isUnique(unique1));
-        System.out.println(isUnique(unique2));
-        System.out.println(isUnique(unique3));
+//        System.out.println(isUnique(unique1));
+//        System.out.println(isUnique(unique2));
+//        System.out.println(isUnique(unique3));
+//
+//        System.out.println(isUnique1(unique1));
+//        System.out.println(isUnique1(unique2));
+//        System.out.println(isUnique1(unique3));
+//
+//        System.out.println(isUnique2(unique1));
+//        System.out.println(isUnique2(unique2));
+//        System.out.println(isUnique2(unique3));
 
-        System.out.println(isUnique1(unique1));
-        System.out.println(isUnique1(unique2));
-        System.out.println(isUnique1(unique3));
-
-        System.out.println(isUnique2(unique1));
-        System.out.println(isUnique2(unique2));
-        System.out.println(isUnique2(unique3));
+        System.out.println(isUnique3(unique1));
+        System.out.println(isUnique3(unique2));
+        System.out.println(isUnique3(unique3));
 
         //2 Given two strings, write a method to decide if one is a permutation of the other
         String permut1 = "ABCD";
@@ -60,7 +65,7 @@ public class _1_Arrays_Strings {
         return true;
     }
 
-    //On2
+    //1a On2 Compare every character of the string to every other character of the string
     static boolean isUnique1(String name) {
         char[] array = name.toCharArray();
         // If at any time we encounter 2 same
@@ -76,7 +81,7 @@ public class _1_Arrays_Strings {
         // return true
         return true;
     }
-
+//1b
     static boolean isUnique2(String name) {
         char[] chars = name.toCharArray();
         Set<Character> set = new HashSet<>();
@@ -86,6 +91,20 @@ public class _1_Arrays_Strings {
             } else return false;
         }
         return true;
+    }
+    //1c Sort the string and then linearly check the string for neighboring characters that are identical.
+    static boolean isUnique3(String name) {
+        boolean isUnique=false;
+        char[] array = name.toCharArray();
+        Arrays.sort(array);
+        for (int i = 0; i < array.length-1; i++) {
+            if (array[i] == array[i + 1]) {
+                isUnique=false;
+                break;
+            }
+            else isUnique=true;
+        }
+        return isUnique;
     }
 
 
@@ -105,7 +124,7 @@ public class _1_Arrays_Strings {
         return sort(first).equals(sort(second));
     }
 
-    //2b
+    //2b Check if the two strings have identical character count
     static boolean permutation1(String s, String t) {
         if (s.length() != t.length()) {
             return false;
