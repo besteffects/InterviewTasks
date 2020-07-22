@@ -1,7 +1,4 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 public class _1_Arrays_Strings {
 
@@ -9,7 +6,7 @@ public class _1_Arrays_Strings {
         //2 Given two strings, write a method to decide if one is a permutation of the other
         String permut1 = "ABCD";
         String permut2 = "ACDB";
-        System.out.println("Check is a string a is a permutation of a string b: " + CheckPermutation(permut1, permut2));
+        System.out.println("Check is a string a is a permutation of a string b: " + checkPermutation(permut1, permut2));
 
         /* 3 Write a method to replace of spaces in a string with '%20. You may assume that the string has sufficient space
         at the end to hold the additional characters and that you are given true length of the string.
@@ -33,7 +30,7 @@ public class _1_Arrays_Strings {
     }
 
     //b compare lengths of two strings
-    static boolean CheckPermutation(String first, String second) {
+    static boolean checkPermutation(String first, String second) {
         if (first.length() != second.length()) {
             return false;
         }
