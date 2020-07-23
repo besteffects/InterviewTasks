@@ -8,7 +8,6 @@ public class IsPermutationOfPalindrome {
          limited to just dictionary words.
          To be a permutation of a palindrome, a string can have no more than one character that is odd. This will cover both the odd and the even cases.*/
         System.out.println("Is this phrase a permutation of palindrome? " + isPermutationOfPalindrome("Tact Coa"));
-        System.out.println("Is this phrase a permutation of palindrome? " + isPermutationOfPalindrome1("Tact Coa"));
     }
 
     // 4 We use a hash table to count how many times each character appears. Then, we iterate through the hash table and ensure
