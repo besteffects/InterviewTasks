@@ -14,7 +14,8 @@ Removal: The strings apple and aple are also one removal away, since removal is 
 */
 public class OneWay {
     public static void main(String[] args) {
-        oneEditAway("pale", "bale");
+  //      oneEditAway("pale", "bale"); //test for replace
+        oneEditAway("pales", "pale"); //test for insert/remove
     }
 
     //merge insertion and removal into one step
