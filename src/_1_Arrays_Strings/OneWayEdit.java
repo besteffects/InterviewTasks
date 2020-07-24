@@ -12,10 +12,10 @@ Insertion: the strings apple and aple are one insertion away. This means that if
 except for a shift at some point in the strings.
 Removal: The strings apple and aple are also one removal away, since removal is just the inverse of insertion
 */
-public class OneWay {
+public class OneWayEdit {
     public static void main(String[] args) {
         //      oneEditAway("pale", "bale"); //test for replace
-        oneEditAway("pales", "pale"); //test for insert/remove
+        oneEditAway("pales", "paes"); //test for insert/remove
     }
 
     //merge insertion and removal into one step
@@ -61,7 +61,7 @@ public class OneWay {
         return true;
     }
 
-    //compare each character and ensure that the strings are only different by one
+    //2 compare each character and ensure that the strings are only different by one
     private static boolean oneEditAway1(String first, String second) {
         //Length checks
         if (Math.abs(first.length() - second.length()) > 1) {
