@@ -16,10 +16,10 @@ public class StringCompression {
     static String compressBad(String string) {
         int repeats = 0;
         String compressedString = "";
-        System.out.println(string.length());
+        System.out.println("String length: " + string.length());
         for (int i = 0; i < string.length(); i++) {
             repeats++;
-            if (i + 1 >= string.length()||string.charAt(i) != string.charAt(i + 1)) { //i+1 never becomes >string.length() "aabccaaaaa" (last i+1 is 8+1. length is 9)
+            if (i + 1 == string.length()||string.charAt(i) != string.charAt(i + 1)) { //i+1 never becomes >string.length() "aabccaaaaa" (last i+1 is 8+1. length is 9), so == will also work.
                 compressedString += string.charAt(i) + Integer.toString(repeats);
                 repeats=0;
             }
