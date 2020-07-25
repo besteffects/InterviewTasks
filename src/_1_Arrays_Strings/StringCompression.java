@@ -8,7 +8,7 @@ your method should return the original string. You can assume the string has onl
 public class StringCompression {
 
     public static void main(String[] args) {
-        System.out.println(compressBad("aabcccccaaa"));
+        System.out.println(compressBad("aabccaaaa"));
     }
 
     // Iterate through the string, copying characters to a new string and counting the repeats. At each iteration, check
@@ -19,7 +19,7 @@ public class StringCompression {
         System.out.println(string.length());
         for (int i = 0; i < string.length(); i++) {
             repeats++;
-            if (i + 1 >= string.length()||string.charAt(i) != string.charAt(i + 1)) {
+            if (i + 1 >= string.length()||string.charAt(i) != string.charAt(i + 1)) { //i+1 never becomes >string.length() "aabccaaaaa" (last i+1 is 8+1. length is 9)
                 compressedString += string.charAt(i) + Integer.toString(repeats);
                 repeats=0;
             }
