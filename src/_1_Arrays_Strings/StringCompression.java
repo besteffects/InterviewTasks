@@ -17,7 +17,7 @@ public class StringCompression {
         int repeats = 0;
         String compressedString = "";
         System.out.println(string.length());
-        for (int i = 0; i <= string.length(); i++) {
+        for (int i = 0; i < string.length(); i++) {
             repeats++;
             if (i + 1 >= string.length()||string.charAt(i) != string.charAt(i + 1)) {
                 compressedString += string.charAt(i) + Integer.toString(repeats);
