@@ -10,6 +10,7 @@ public class StringCompression {
     public static void main(String[] args) {
         System.out.println(compressBad("aabccaaaa"));
         System.out.println(compress("aabccaaaa"));
+        System.out.println(compress1("aabccaaaa"));
     }
 
     //1.  Iterate through the string, copying characters to a new string and counting the repeats. At each iteration, check
@@ -44,5 +45,42 @@ public class StringCompression {
             }
         }
         return compressed.length() < string.length() ? compressed.toString() : string;
+    }
+
+
+    //3. In the case when there are not large amount of repeating characters
+    static String compress1(String string) {
+        //Check final string and return input string if it would be longer
+        int finalLength = countCompression(string);
+        if (finalLength >= string.length()) {
+            return string;
+        }
+        StringBuilder compressed = new StringBuilder(finalLength); //initial capacity
+        for (int i = 0; i < string.length(); i++) {
+            int countConsecutive = 0;
+
+            //If next character is different than current, append this char to result
+            if (i + 1 > string.length() || string.charAt(i) != string.charAt(i + 1)) {
+                compressed.append(string.charAt(i));
+                compressed.append(countConsecutive);
+                countConsecutive = 0;
+            }
+        }
+        return compressed.toString();
+    }
+
+    private static int countCompression(String string) {
+        int compressedLength=0;
+        int countConsecutive=0;
+        for (int i = 0; i <string.length() ; i++) {
+            countConsecutive++;
+
+            //If next character is different than current, increase the length
+            if (i+1>=string.length() || string.charAt(i)!=string.charAt(i+1)){
+                compressedLength+=1+string.valueOf(countConsecutive).length();
+                countConsecutive=0;
+            }
+        }
+        return compressedLength;
     }
 }
