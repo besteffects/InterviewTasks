@@ -7,9 +7,8 @@ Write an algorithm such that if an element in an MxN matrix is 0, its entire row
  */
 public class ZeroMatrix {
     public static void main(String[] args) {
-        setZeros( new int[][]{ {1, 2, 3,5,3,0,12}, {7, 8, 9,5,3}});
+        setZeros(new int[][]{{5, 0, 12, 1}, {9, 5, 3}});
     }
-
 
     static void setZeros(int[][] matrix) {
         System.out.println("Initial Array" + Arrays.deepToString(matrix));
@@ -18,7 +17,7 @@ public class ZeroMatrix {
 
         //Store the row and column index with value 0
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
+            for (int j = 0; j < matrix[i].length; j++) { //in the example was (int j = 0; j < matrix[0].length; j++), but it worked only for square arrays
                 if (matrix[i][j] == 0) {
                     row[i] = true;
                     column[j] = true;
@@ -34,7 +33,7 @@ public class ZeroMatrix {
         }
 
         //Nullify columns
-        for (int j = 0; j < matrix[0].length; j++) {
+        for (int j = 0; j < column.length; j++) {
             if (column[j]) nullifyColumn(matrix, j);
         }
 
