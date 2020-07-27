@@ -77,7 +77,7 @@ public class StringCompression {
 
             //If next character is different than current, increase the length
             if (i+1>=string.length() || string.charAt(i)!=string.charAt(i+1)){
-                compressedLength+=1+string.valueOf(countConsecutive).length();
+                compressedLength+=1+string.valueOf(countConsecutive).length(); //string itself+string value of counter(countconsecutive)
                 countConsecutive=0;
             }
         }
