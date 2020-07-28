@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6605095d-b1c2-440e-a6c8-cfcc9355b30a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/_1_Arrays_Strings/StringRotation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_Arrays_Strings/ZeroMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Arrays_Strings/ZeroMatrix.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,14 +56,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/ZeroMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="96" column="12" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
+            <state relative-caret-position="-314">
+              <caret line="61" column="56" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="56" />
               <folding>
                 <element signature="e#210#211#0" expanded="true" />
                 <element signature="e#287#288#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/StringRotation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              <folding>
+                <element signature="e#362#363#0" expanded="true" />
+                <element signature="e#437#438#0" expanded="true" />
+                <element signature="e#870#871#0" expanded="true" />
+                <element signature="e#912#913#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,20 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsPermutation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
+            <state relative-caret-position="436">
               <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsUnique.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1575">
-              <caret line="105" column="45" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -149,6 +152,7 @@
         <option value="$PROJECT_DIR$/src/_1_Arrays_Strings/StringCompression.java" />
         <option value="$PROJECT_DIR$/src/_1_Arrays_Strings/RotateMatrix.java" />
         <option value="$PROJECT_DIR$/src/_1_Arrays_Strings/ZeroMatrix.java" />
+        <option value="$PROJECT_DIR$/src/_1_Arrays_Strings/StringRotation.java" />
       </list>
     </option>
   </component>
@@ -212,20 +216,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ZeroMatrix">
-    <configuration name="IsUnique" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_Arrays_Strings.IsUnique" />
-      <module name="Interview tasks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_1_Arrays_Strings.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.StringRotation">
     <configuration name="OneWayEdit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1_Arrays_Strings.OneWayEdit" />
       <module name="Interview tasks" />
@@ -259,6 +250,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringRotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1_Arrays_Strings.StringRotation" />
+      <module name="Interview tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_1_Arrays_Strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ZeroMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1_Arrays_Strings.ZeroMatrix" />
       <module name="Interview tasks" />
@@ -275,17 +279,17 @@
     <list>
       <item itemvalue="Application.Search" />
       <item itemvalue="Application.OneWayEdit" />
-      <item itemvalue="Application.IsUnique" />
       <item itemvalue="Application.StringCompression" />
       <item itemvalue="Application.ZeroMatrix" />
+      <item itemvalue="Application.StringRotation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringRotation" />
         <item itemvalue="Application.ZeroMatrix" />
         <item itemvalue="Application.Search" />
         <item itemvalue="Application.StringCompression" />
         <item itemvalue="Application.OneWayEdit" />
-        <item itemvalue="Application.IsUnique" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +325,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2259887" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2259887" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286517" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.31920904" />
@@ -464,20 +468,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/ZeroMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-314">
+          <caret line="61" column="56" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="56" />
+          <folding>
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsPermutation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
+        <state relative-caret-position="436">
           <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/ZeroMatrix.java">
+    <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/StringRotation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="96" column="12" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
+        <state relative-caret-position="285">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
           </folding>
         </state>
       </provider>
