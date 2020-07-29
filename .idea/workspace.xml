@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6605095d-b1c2-440e-a6c8-cfcc9355b30a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/_1_Arrays_Strings/StringRotation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -69,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/StringRotation.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsSubstring.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="270">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding>
                 <element signature="e#362#363#0" expanded="true" />
                 <element signature="e#437#438#0" expanded="true" />
@@ -93,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsPermutation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
+            <state relative-caret-position="328">
               <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
             </state>
           </provider>
@@ -153,6 +152,7 @@
         <option value="$PROJECT_DIR$/src/_1_Arrays_Strings/RotateMatrix.java" />
         <option value="$PROJECT_DIR$/src/_1_Arrays_Strings/ZeroMatrix.java" />
         <option value="$PROJECT_DIR$/src/_1_Arrays_Strings/StringRotation.java" />
+        <option value="$PROJECT_DIR$/src/_1_Arrays_Strings/IsSubstring.java" />
       </list>
     </option>
   </component>
@@ -216,7 +216,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StringRotation">
+  <component name="RunManager">
+    <configuration name="IsSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1_Arrays_Strings.IsSubstring" />
+      <module name="Interview tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_1_Arrays_Strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OneWayEdit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1_Arrays_Strings.OneWayEdit" />
       <module name="Interview tasks" />
@@ -250,19 +263,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringRotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_Arrays_Strings.StringRotation" />
-      <module name="Interview tasks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_1_Arrays_Strings.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ZeroMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1_Arrays_Strings.ZeroMatrix" />
       <module name="Interview tasks" />
@@ -281,11 +281,11 @@
       <item itemvalue="Application.OneWayEdit" />
       <item itemvalue="Application.StringCompression" />
       <item itemvalue="Application.ZeroMatrix" />
-      <item itemvalue="Application.StringRotation" />
+      <item itemvalue="Application.IsSubstring" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StringRotation" />
+        <item itemvalue="Application.IsSubstring" />
         <item itemvalue="Application.ZeroMatrix" />
         <item itemvalue="Application.Search" />
         <item itemvalue="Application.StringCompression" />
@@ -320,7 +320,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21468927" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21468927" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40254238" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -373,6 +373,24 @@
           <line>83</line>
           <properties />
           <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsSubstring.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsSubstring.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsSubstring.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="87" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -479,23 +497,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsPermutation.java">
+    <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsSubstring.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/StringRotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="270">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding>
             <element signature="e#362#363#0" expanded="true" />
             <element signature="e#437#438#0" expanded="true" />
             <element signature="e#870#871#0" expanded="true" />
             <element signature="e#912#913#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_Arrays_Strings/IsPermutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
         </state>
       </provider>
     </entry>
