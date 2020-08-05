@@ -29,10 +29,17 @@ public class TestsInterview {
 
         //Task6
         int [] arr= {-3, 1,2,3,4,5,15,53,0};
+
         System.out.println(Arrays.toString(arr));
         findMaxNumber(arr);
 
+        //Task7 Reverse a string
+        System.out.println("Reverse a string: ");
+        reverseString("CoolName");
+
     }
+
+
 
 //	1. There is a scoundrel who stole a dog from a neighbor.
 //	He wants to write a ransom note, cutting out words from a newspaper.
@@ -174,5 +181,27 @@ public class TestsInterview {
         }
         System.out.println(maxNum);
         return maxNum;
+    }
+
+    /*
+    coolName //expected "emaNlooC"
+    arr[0] = arr[arr.length-1] e
+    arr[1] = arr[arr.length-2] m
+    arr[2] = arr[arr.length-3] a
+    arr[3] = arr[arr.length-4] N
+    arr[4] = arr[arr.length-5] l
+    arr[5] = arr[arr.length-6] o
+    arr[6] = arr[arr.length-7] o
+    arr[7] = arr[arr.length-8] C  */
+    private static String reverseString(String string) {
+        char [] stringArray= string.toCharArray();
+        char [] resultArray = new char[stringArray.length];
+        for (int i = 0; i <stringArray.length ; i++) {
+            resultArray[i]=stringArray[stringArray.length-1-i];
+        }
+
+        String str = String.valueOf(resultArray);
+        System.out.println(str);
+        return str;
     }
 }

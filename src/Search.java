@@ -3,7 +3,7 @@ public class Search {
     private static int[] arrayBinary = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
     public static void main(String[] args) {
-        binarySearch(binarySearchValue, arrayBinary);
+        binarySearch(binarySearchValue, arrayBinary); //binary search is used only for sorted arrays.
     }
 
     //Good link https://www.baeldung.com/java-binary-search
