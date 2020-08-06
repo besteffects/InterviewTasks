@@ -71,13 +71,16 @@ public class TestsInterview {
     }
 
     // 2. Find the factors of numbers from n to k
+    //Or, find all the whole numbers that n to k are divisible by
     static void findFactor(int n, int k) {
-        System.out.print("2. Find the factors of numbers from n to k");
+        System.out.println("2. Find the factors of numbers from " + n + " to " +k);
         for (int i = n; i <= k; i++) {
-            System.out.println("Factors of n " + i + ":");
+            System.out.println();
+            System.out.println("Factors of " + i + ":");
+            System.out.print(1 + " " + i+ " " );
             for (int j = 2; j < i; j++) {
                 if ((i % j) == 0) {
-                    System.out.print(j + " ");
+                    System.out.print( j + " ");
                 }
             }
         }
