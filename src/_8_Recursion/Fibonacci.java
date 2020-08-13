@@ -21,6 +21,13 @@ public class Fibonacci {
         long endTime1 = System.nanoTime();
         long duration1 = endTime1 - startTime1;
         System.out.println("Recursion with optimization duration (nanoseconds): " + duration1);
+
+
+        long startTime2 = System.nanoTime();
+        System.out.println(fibonacciIterative(10));
+        long endTime2 = System.nanoTime();
+        long duration2 = endTime2 - startTime2;
+        System.out.println("With iterative approach (nanoseconds): " + duration2);
     }
 
     //slow method with recursion
@@ -40,6 +47,18 @@ public class Fibonacci {
             memo[i] = fibonacciCached(i - 1, memo) + fibonacciCached(i - 2, memo);
         }
         return memo[i];
+    }
+
+    //fibonacci iterative, fastest for small values
+    static int fibonacciIterative(int n){
+        int t1=0, t2=1;
+
+        for (int i = 1; i <=n ; ++i) {
+            int sum=t1+t2;
+            t1=t2;
+            t2=sum;
+        }
+        return t1;
     }
 
 }
